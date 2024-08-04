@@ -2,16 +2,17 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/videos/:path*',  // Adjust this path based on where your videos are located
+        source: '/videos/:path*',
         headers: [
           {
             key: 'Content-Type',
-            value: 'video/mp4', // Adjust MIME type based on your video format
+            value: 'video/mp4',
           },
         ],
       },
     ];
   },
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
 };
 
 export default nextConfig;
