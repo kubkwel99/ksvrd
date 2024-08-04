@@ -1,0 +1,38 @@
+@media screen and (max-width: 780px) {
+   #VideoPlayer {
+      padding: 0;
+      margin: 0;
+      z-index: 1000;
+      overflow-x: scroll;
+   }
+   .videoGrid {
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+   }
+   .videoInfo {
+      align-items: start;
+      justify-content: center;
+      padding: 1rem;
+      margin: 0;
+      min-width: 366px;
+      min-height: auto !important ;
+      text-align: left;
+   }
+}
+
+@media screen and (max-width: 590px) {
+   .right,
+   .left {
+      border-radius: 999px;
+      opacity: 20%;
+      background: #414141;
+      margin: 4px;
+      padding: 0 5px !important;
+   }
+   .right:hover,
+   .left:hover {
+      opacity: 45%;
+      transition: 300ms ease-in-out;
+   }
+}
